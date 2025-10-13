@@ -1,0 +1,2 @@
+Arrancamos haciendo los planos 2d de las oficinas en draw.io. Se revisaron los planos base y la distribución general de las oficinas, comenzamos con el modelado 2D de las habitaciones que incluyen 
+las computadoras, ajustamos proporciones y medidas para mantener coherencia entre los espacios. 
