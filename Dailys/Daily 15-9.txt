@@ -1,0 +1,3 @@
+Realicé el Diagrama Entidad-Relación (DER) del sistema Spark Events.
+Definí las entidades principales  (Eventos, Usuarios, Tickets, Pagos y Accesos)
+Establecí las relaciones entre las tablas, incluyendo cardinalidades y claves primarias/foráneas.
