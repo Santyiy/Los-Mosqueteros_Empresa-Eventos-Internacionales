@@ -3,4 +3,4 @@
 The Spark Events
 ⚡💯
 
-Integrantes: Vera Thiago, Cabral Maximo, Paladea Ian y Vigo Santiago
+Integrantes: Vera Thiago, Cabral Maximo, Paladea Ian, Vigo Santiago y Leonel Pedraza
