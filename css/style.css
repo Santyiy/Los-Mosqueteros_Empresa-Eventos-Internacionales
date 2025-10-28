@@ -1,0 +1,95 @@
+/* --- GENERALES / BODY --- */
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000; 
+    color: #ffffff; /* Color de texto base (para etiquetas y enlaces) */
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.main-container {
+    position: relative;
+    width: 760px; 
+    height: 500px; /* Altura Fija para que el contenido de registro (más largo) no se desborde */
+    background: #101010; 
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 0 20px rgba(125, 0, 255, 0.5); 
+    display: flex; 
+}
+
+/* --- CAJA DE FORMULARIO (DERECHA) --- */
+.main-container__form-box {
+    /* ... (resto de estilos) ... */
+    
+    /* Centrado de contenido interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* CRÍTICO: Centra verticalmente el FORMULARIO */
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    /* ... (resto de estilos) ... */
+}
+
+/* --- ELEMENTOS DEL FORMULARIO --- */
+.form-box form {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para el campo */
+    margin-bottom: 20px; /* Ajuste la separación para que quepan 5 campos */
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.input-box input {
+    width: 100%; 
+    padding: 10px 10px 10px 40px; 
+    border: 1px solid #7d00ff; 
+    border-radius: 5px;
+    background: #1c1c1c; /* CRÍTICO: Fondo del input oscuro */
+    color: #fff; /* CRÍTICO: Color del texto blanco */
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Estilo del ícono */
+.input-box .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(50%);
+    color: #7d00ff;
+    font-size: 1.1em;
+    pointer-events: none; 
+}
+
+/* Estilo del Botón */
+.button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin-top: 15px; /* Ajuste la separación */
+    background: #7d00ff; 
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
