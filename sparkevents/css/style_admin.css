@@ -1,0 +1,152 @@
+/* --- Estilos Generales y Reseteo --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fondo Principal Negro */
+    color: #ffffff;
+}
+
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* --- Sidebar (Barra de Navegación Lateral) --- */
+.sidebar {
+    width: 250px;
+    background-color: #1a1a1a; /* Gris muy oscuro */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
+.logo-admin {
+    text-align: center;
+    padding: 10px 0 30px 0;
+    border-bottom: 1px solid #333;
+}
+
+.admin-nav {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 20px 0;
+}
+
+.nav-item {
+    display: block;
+    padding: 15px 20px;
+    color: #ccc;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-item.active {
+    background-color: #7d00ff; /* Morado Activo */
+    color: white;
+    border-left: 5px solid #5d00ff;
+}
+
+.nav-item i {
+    margin-right: 10px;
+}
+
+/* --- Content Main (Contenido Principal) --- */
+.content-main {
+    flex-grow: 1; /* Ocupa el resto del espacio horizontal */
+    padding: 0 40px 40px 40px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 2px solid #333;
+    margin-bottom: 30px;
+}
+
+#module-title {
+    color: #7d00ff;
+}
+
+/* --- Contenido de Módulos --- */
+.module-content h2 {
+    border-bottom: 2px solid #5d00ff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* --- Estadísticas (Dashboard) --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(125, 0, 255, 0.2);
+}
+
+.stat-card h3 {
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #7d00ff;
+}
+
+/* --- Botones --- */
+.btn-primary {
+    padding: 10px 15px;
+    background-color: #2ecc71; /* Verde para acciones primarias */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;
+}
+
+/* --- Footer de Sidebar --- */
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #c0392b; /* Rojo para cerrar sesión */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.logout-btn:hover {
+    background-color: #a0291b;
+}

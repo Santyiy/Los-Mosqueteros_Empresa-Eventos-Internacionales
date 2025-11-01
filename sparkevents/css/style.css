@@ -1,0 +1,132 @@
+/* --- GENERALES / BODY --- */
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000000; /* Fondo Principal Negro */
+    color: #ffffff; 
+}
+
+/* --- CONTENEDOR PRINCIPAL (La caja central dividida) --- */
+.main-container {
+    position: relative;
+    width: 760px; 
+    height: 500px; 
+    background: #101010; /* Fondo Gris Oscuro */
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0 0 20px rgba(125, 0, 255, 0.5); /* Sombra Morada */
+    display: flex; 
+}
+
+/* --- CAJA DE FORMULARIO BASE (Mitades) --- */
+.main-container__form-box {
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* --- ESTILO ESPECÍFICO DE LA CAJA DE BIENVENIDA (Morada) --- */
+.welcome-box {
+    background: linear-gradient(135deg, #7d00ff, #5d00ff);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.welcome-box__title {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+.welcome-box__text {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+/* --- ELEMENTOS DEL FORMULARIO --- */
+.form-box form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-box__title {
+    font-size: 2em;
+    margin-bottom: 25px;
+    color: #7d00ff; /* Título Morado */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.input-box input {
+    width: 100%; 
+    padding: 10px 10px 10px 40px; 
+    border: 1px solid #7d00ff; 
+    border-radius: 5px;
+    background: #1c1c1c; /* Fondo del input oscuro */
+    color: #fff; /* Texto del input blanco */
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Estilo del ícono (ajuste crucial de la posición) */
+.input-box .icon {
+    position: absolute;
+    left: 10px;
+    top: 38px; /* Ajustado para centrar verticalmente bajo el label */
+    color: #7d00ff;
+    font-size: 1.1em;
+    pointer-events: none; 
+}
+
+/* Estilo del Botón */
+.button {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin-top: 15px;
+    background: #7d00ff; 
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.button:hover {
+    background: #5d00ff;
+}
+
+.form-box__link {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+.form-box__link a {
+    color: #7d00ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Área de mensajes de error/éxito */
+#message-area p {
+    font-size: 0.9em;
+}
