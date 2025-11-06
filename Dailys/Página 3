@@ -1,0 +1,29 @@
+. Avance Reportado (Ayer Hice)
+Se ha instalado el objetivo principal del día anterior: la estabilización del Frontend.
+
+Frontend 100% Funcional: La implementación de Mock Data está completa. index_logic.jslee el archivomock_events.json , y la autenticación ya simula el Login/Registro sin depender de la red.
+
+Maquetación Verificada: Puedes validar el 100% de los estilos y la navegación, lo cual confirma que el Frontend está listo para la conexión real.
+
+2. Bloqueo Crítico y Problemas Menores 
+El bloqueo ahora es interno, relacionado con la base de datos:
+
+Bloqueo Crítico (Pendiente): El proyecto Spring Boot está abierto, pero no tiene las clases ni la configuración necesarias para conectarse a la Base de Datos MySQL (XAMPP) y obtener los eventos.
+
+Problema Menor (Configuración de XAMPP): Tuve un pequeño contratiempo al verificar la disponibilidad del puerto de MySQL en XAMPP, lo cual consumió tiempo, pero la conexión a la base de datos eventos_dbestá verificada y activa.
+
+3. Plan de Acción
+El plan de hoy es construir la arquitectura de la API de Java para empezar a consumir datos reales de la Base de Datos.
+
+Tarea 1: Configuración de Conexión: En NetBeans, configuraré el archivo application.propertiescon las credenciales exactas de MySQL (XAMPP) : URL, nombre de usuario y contraseña.
+
+Tarea 2: Estructura de Capas: Crear la jerarquía de paquetes ( controller/, service/,model/ , repository/) para organizar el código.
+
+Tarea 3: Modelo de Eventos: Crear la clase Evento.javaen el paquetemodel/ . Esta clase representará la tabla Eventosde la Base de Datos (entidad JPA).
+
+Tarea 4: Repositorio de Eventos: Crear la interfaz EventoRepository.javaen el paquete repository/extendiendoJpaRepository . Esto nos permitirá interactuar con la tabla Eventossin escribir manual SQL.
+
+Resultado Esperado: Al final del día, la aplicación de Spring Boot deberá iniciar sin errores de conexión a la Base de Datos y las entidades de Eventos deberán estar mapeadas.
+
+4
+Propiedades de la Aplicación: ¿Necesitamos un puerto diferente al 8080 para la API, o el puerto por defecto es suficiente por ahora?
