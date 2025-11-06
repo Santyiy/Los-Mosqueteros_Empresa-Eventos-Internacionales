@@ -1,0 +1,33 @@
+Avance Reportado (Ayer Hice)
+Mi trabajo se centró en la estructura del Frontend y la preparación de los scripts principales:
+
+Maquetación Finalizada (90%): El HTML y CSS de las páginas clave están listos: index.html(Listado de Eventos) y la autenticación ( login.htmly register.html). El diseño en Modo Oscuro está implementado.
+
+Scripts de Lógica: Prepare las funciones JavaScript index_logic.jspara renderizar las tarjetas y auth_logic.jspara manejar el envío de formularios.
+
+Estructura del Proyecto: La jerarquía de archivos ( css/, js/, data/) está verificada y organizada.
+
+2. Bloqueo Crítico y Problemas Menores 
+Tuve dos obstáculos, uno menor de diseño y uno crítico de dependencia:
+
+Problema Menor (Resuelto): Tuve un pequeño problema de alineación con las tarjetas de eventos. El sistema de grid en el CSS no estaba funcionando correctamente para centrar los elementos verticalmente, lo que consumió tiempo extra de maquetación, pero quedó resuelto antes del final del día.
+
+Bloqueo Crítico (Pendiente): El JavaScript está cableado para llamar a la URL de la API de Java en http://localhost:8080. Como el servidor Spring Boot está inactivo, la ejecución de las funciones fetch()falla, rompiendo la lógica del Frontend.
+
+Consecuencia: No puedo validar si las funciones de renderizado de tarjetas o la redirección de autenticación funcionan correctamente.
+
+3. Plan de Acción 
+Mi objetivo es resolver la dependencia del Backend mediante la implementación de Mock Data (Datos Falsos) .
+
+Tarea Principal: Modificaré los scripts para que simulen una respuesta exitosa del servidor .
+
+Solución para Eventos: En index_logic.js, la función de obtención de datos leerá el archivo local data/mock_events.jsonen lugar de hacer la llamada a la red.
+
+Solución para Autenticación: En auth_logic.js, las funciones de Login y Registro serán alteradas para simular el éxito con credenciales de prueba ( admin/admin123) y realizarn la redirección, sin intentar contactar al puerto 8080.
+
+Resultado Esperado: El Frontend será totalmente estable, permitiendo la validación completa de la interfaz de usuario con datos estáticos.
+
+4. Pregunta Clave de Sincronización
+Nomenclatura: Necesito confirmar la nomenclatura final de las propiedades de la entidad Eventoen el modelo de Java (ej. nombre, fechaHora, imagenUrl) para que mi archivo mock_events.jsoncoincida con la estructura del Backend.
+
+Si este informe cumple con tus expectativas, podemos pasar al Daily Scrum 2/10 que se enfocará en la estructura inicial del Backend de Java en NetBeans.
