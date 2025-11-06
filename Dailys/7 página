@@ -1,0 +1,7 @@
+Mi plan de acción de hoy es modificar el AuthController. Primero, inyectaré el AuthService.javay el PasswordEncoder. Dentro del método POST /api/v1/auth/register, voy a recibir los datos del Frontend, encriptar la contraseña usando BCryptPasswordEncoder, y luego llamar al servicio para guardar el nuevo Usuarioen la Base de Datos.
+
+Crucialmente, en esta lógica de registro, me aseguraré de que el nuevo usuario sea guardado con el rolde 'CLIENTE' por defecto . Esto es clave para el futuro manejo de la seguridad, permitiendo que solo los usuarios con rol 'ADMIN' accedan al panel para agregar tickets, modificar eventos y gestionar el inventario . Una vez que el Backend esté listo, eliminará el Mock de register.jsen el Frontend.
+
+El resultado esperado es que al registrar un nuevo usuario desde la página web, este se guarda con el rol 'CLIENTE' y la contraseña cifrada en la tabla Usuariosde MySQL, preparando la funcionalidad de acceso al panel de administración.
+
+Mi pregunta clave es si necesito que el endpoint de registro devuelva inmediatamente un token JWT para iniciar sesión automáticamente, o si solo debe devolver un mensaje de éxito y forzar la redirección al Login
