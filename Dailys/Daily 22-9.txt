@@ -1,2 +1,26 @@
-El dia de la fecha 22/09/2025 Ian Paladea arranco a hacer el Diagrama de Entidad Relacion y Máximo Cabral arranco a hacer el modelo del diseño de la pagina en Figma y Santiago Vigo sigue 
-avanzando con las haitaciones en 2D
+
+Fecha: 28/09/2025 (Reportando avances del 22/09/2025)
+
+Propósito de la Reunión: Reporte de Avance en la reevaluación del Modelado de Datos y la Fase de Diseño.
+
+Consolidación de Entregables (Avance Reportado)
+Se registra un aparente reinicio o una revisión profunda en tareas clave de planificación y diseño, volviendo a enfocarse en los modelos fundacionales del proyecto.
+
+Ian Paladea (Área: Planificación y Procesos): Inició la elaboración del Diagrama de Entidad-Relación (DER). Este enfoque sugiere una revisión integral del modelo de datos previamente definido, asegurando que la estructura de la Base de Datos cumpla con los requisitos finales.
+
+Máximo Cabral (Maxi) (Área: Diseño de Interfaz de Usuario - Figma): Inició el modelado del diseño de la página en Figma. Este inicio implica una revisión o reestructuración del diseño de la interfaz previamente acordado, enfocándose nuevamente en la estructura fundamental de la aplicación.
+Santiago Vigo (Área: Estructura Física): Continúa con el avance en la documentación física del proyecto, registrando progreso en las habitaciones en 2D.
+
+Vigo Santiago (Thiago) (Área: Bases de Datos y Frontend): El DER está publicado en GitHub. La tarea de maquetación de los flujos de autenticación queda en stand-by mientras se valida la nueva fase de diseño en Figma
+
+Identificación de Riesgos y Bloqueos 🛑
+El Riesgo Crítico es la regresión del schedule: El reinicio del trabajo en el DER y el diseño de Figma genera un retraso en la transición a la codificación (HTML/CSS) y la planificación detallada (GANTT), afectando la ruta crítica. Es vital entender las razones de este rollback en las tareas.
+Planificación del Próximo Ciclo 🛠️
+Ian Paladea: Finalizar el nuevo Diagrama de Entidad-Relación (DER).
+
+Máximo Cabral (Maxi): Finalizar el nuevo diseño o las modificaciones críticas en Figma.
+Vigo Santiago (Thiago): Reunirse con Ian Paladea para validar el nuevo DER antes de que sea oficial y reanudar la maquetación HTML/CSS.
+Santiago Vigo: Continuar el avance en los planos del Diagrama 2D.
+
+Decisión Pendiente (Sincronización) ❓
+Se requiere una reunión inmediata para definir el alcance de los cambios en el DER y Figma, y establecer una nueva fecha de deadline para la maquetación HTML/CSS.
