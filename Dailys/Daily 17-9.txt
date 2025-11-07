@@ -1,0 +1,29 @@
+
+Fecha: 26/09/2025 (Reportando avances del 17/09/2025)
+
+Propósito de la Reunión: Reporte de Avance en la transición de la fase de Diseño a la fase de Codificación y Schedule.
+Consolidación de Entregables (Avance Reportado)
+
+Se ha completado la fase de diseño crítico, permitiendo la transición formal hacia la implementación de código y la planificación detallada del tiempo de ejecución.
+
+Máximo Cabral (Maxi) y Vigo Santiago (Thiago) (Áreas: Diseño y Frontend): Se ha finalizado la revisión y cierre de los wireframes de la interfaz en Figma, incluyendo el diseño del Panel de Administración. Con esto, se ha iniciado la fase de maquetación en HTML/CSS, priorizando los assets necesarios para el flujo de autenticación (login.html y register.html) como punto de partida para la integración futura con el Backend.
+
+Ian Paladea (Área: Requisitos Funcionales y Modelado de Procesos): Habiendo finalizado el Diagrama CPM, se ha iniciado la elaboración del Diagrama GANTT. Este diagrama establecerá el cronograma detallado y las dependencias de todas las tareas, convirtiendo la ruta crítica en un schedule ejecutable para el equipo.
+
+Vigo Santiago (Áreas: Bases de Datos y Estructura Física): Se ha concluido la documentación final del Diagrama de Entidad-Relación (DER). Este documento fundamental está listo para su commit inicial en el repositorio de GitHub. Paralelamente, se mantiene el avance en la documentación del Diagrama 2D.
+
+Santiago Vigo (Área: Diseño Físico): El trabajo de distribución de equipos en los planos 2D, iniciado en draw.io, se encuentra próximo a su finalización, consolidando la planificación de espacios.
+
+Identificación de Riesgos y Bloqueos 
+El Riesgo de Acoplamiento de Datos se mantiene, requiriendo que la maquetación HTML (Maxi/Thiago) respete la nomenclatura de campos definida en el DER (Thiago) para evitar refactorización futura. No hay un Bloqueo Crítico reportado.
+
+Planificación del Próximo Ciclo 
+Máximo Cabral y Thiago: Continuar la maquetación de los flujos de autenticación e iniciar el commit de los primeros archivos HTML/CSS a GitHub.
+
+Ian Paladea: Finalizar el Diagrama GANTT y el DFD, culminando la fase de planificación.
+Vigo Santiago: Publicar el DER final en el repositorio central de GitHub y continuar el avance en los planos del Diagrama 2D.
+
+Santiago Vigo: Culminar la distribución de equipos en los planos 2D.
+
+Decisión Pendiente (Sincronización) 
+Se requiere una revisión rápida y formal de los primeros templates HTML/CSS para validar la implementación del diseño antes de que avance la maquetación del index.
