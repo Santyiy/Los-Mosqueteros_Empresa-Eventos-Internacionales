@@ -5,14 +5,14 @@ Frontend 100% Funcional: La implementación de Mock Data está completa. index_l
 
 Maquetación Verificada: Puedes validar el 100% de los estilos y la navegación, lo cual confirma que el Frontend está listo para la conexión real.
 
-2. Bloqueo Crítico y Problemas Menores 🛑
+2. Bloqueo Crítico y Problemas Menores 
 El bloqueo ahora es interno, relacionado con la base de datos:
 
 Bloqueo Crítico (Pendiente): El proyecto Spring Boot está abierto, pero no tiene las clases ni la configuración necesarias para conectarse a la Base de Datos MySQL (XAMPP) y obtener los eventos.
 
 Problema Menor (Configuración de XAMPP): Tuve un pequeño contratiempo al verificar la disponibilidad del puerto de MySQL en XAMPP, lo cual consumió tiempo, pero la conexión a la base de datos eventos_dbestá verificada y activa.
 
-3. Plan de Acción (Hoy Haré) 🛠️
+3. Plan de Acción (Hoy Haré) 
 El plan de hoy es construir la arquitectura de la API de Java para empezar a consumir datos reales de la Base de Datos.
 
 Tarea 1: Configuración de Conexión: En NetBeans, configuraré el archivo application.propertiescon las credenciales exactas de MySQL (XAMPP) : URL, nombre de usuario y contraseña.
