@@ -1,0 +1,29 @@
+
+Fecha: 30/09/2025 (Reportando avances del 26/09/2025)
+
+Propósito de la Reunión: Reporte de la finalización de la documentación de planificación y el progreso en la implementación del Frontend.
+
+Consolidación de Entregables (Avance Reportado)
+Se ha completado la fase documental crítica del proyecto, permitiendo un enfoque total en la codificación y el modelado 3D.
+
+Máximo Cabral (Maxi) y Vigo Santiago (Thiago) (Áreas: Diseño y Frontend): Se ha finalizado la maquetación de los flujos de autenticación, cerrando la necesidad de correcciones de diseño en esa área. La atención se ha movido completamente a la maquetación de la página principal (index), avanzando en la estructura de presentación de eventos
+
+Ian Paladea (Área: Planificación y Procesos): Se finalizó la elaboración del Diagrama GANTT, estableciendo el cronograma oficial del proyecto y las dependencias temporales. Con esto, se inició formalmente la documentación del Diagrama de Flujo de Datos (DFD), mapeando el flujo de información del sistema.
+
+Vigo Santiago (Áreas: Bases de Datos y Estructura Física): Se culminaron los planos restantes del Diagrama 2D, cerrando la fase de modelado de la estructura física en dos dimensiones.
+
+Santiago Vigo (Área: Diseño Físico): Se inició la colaboración activa con Ian Paladea para el modelado 3D del espacio físico, utilizando los planos 2D recién finalizados como base
+
+Identificación de Riesgos y Bloqueos 
+El riesgo principal es el Desfase Documental: Es crucial que la maquetación de la página principal (Maxi/Thiago) no avance más rápido que la documentación del DFD (Ian), para asegurar que el diseño de la interfaz refleje los flujos de datos correctos.
+
+Planificación del Próximo Ciclo 
+Máximo Cabral y Thiago: Finalizar la maquetación de la página principal (index) y del Panel de Administración.
+
+Ian Paladea: Finalizar el Diagrama de Flujo de Datos (DFD).
+Vigo Santiago: El área de 2D está finalizada. El enfoque se reorienta a la preparación del entorno de desarrollo del Backend (Java/Spring Boot).
+
+Santiago Vigo: Continuar y avanzar el modelado 3D en colaboración con Ian Paladea.
+
+Decisión Pendiente (Sincronización) ❓
+Se requiere una validación formal e inmediata de los Diagramas CPM y GANTT finalizados para que todo el equipo oficialice el schedule del proyecto.
