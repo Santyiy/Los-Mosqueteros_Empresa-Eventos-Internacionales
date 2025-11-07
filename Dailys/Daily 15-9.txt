@@ -1,1 +1,23 @@
-El dia de la fecha de hoy 15/09/2025 Santiago Vigo arrancó lo que seria la distriucion de los equipos en las haitaciones en 2D end draw.io 
+Fecha: 25/09/2025 (Asumiendo secuencia. Reportando avance del 15/09/2025)
+
+Propósito de la Reunión: Reporte de Avance en el Modelado 2D.
+Consolidación de Entregables (Avance Reportado)
+Se formaliza el inicio de las tareas de modelado físico con la herramienta de diagramación.
+
+Santiago Vigo (Área: Diseño Físico): Inició formalmente la distribución de los equipos dentro de las habitaciones en los planos 2D, utilizando la herramienta draw.io. Este proceso define la ubicación precisa del equipamiento para el proyecto.
+
+Status Quo de Otros Miembros: Los demás integrantes del equipo continúan con las tareas asignadas: Ian Paladea en la planificación de los diagramas CPM/GANTT, Máximo Cabral y Vigo Santiago finalizando los diseños en Figma y preparando la maquetación HTML/CSS.
+
+Identificación de Riesgos y Bloqueos 
+El Riesgo de Dependencia es alto: El trabajo de distribución de Santiago debe ser validado por Vigo Santiago (Thiago) (quien trabaja el Diagrama 2D) e Ian Paladea (quien colabora en el modelado 3D), para asegurar la coherencia del diseño físico.
+
+Planificación del Próximo Ciclo 
+
+Santiago Vigo: Continuar y finalizar la distribución de los equipos en los planos 2D en draw.io.
+
+Máximo Cabral y Thiago: Finalizar el diseño del Panel de Administración e iniciar la maquetación HTML/CSS.
+
+Ian Paladea: Finalizar el Diagrama CPM e iniciar el Diagrama GANTT.
+
+Decisión Pendiente (Sincronización)
+Se requiere una decisión final sobre la prioridad de maquetación para iniciar la codificación: Registro/Login o Lista de Eventos.
