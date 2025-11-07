@@ -1,2 +1,39 @@
-El dia de la fecha 24/09/2025 Ian Paladea sigue haciendo el Diagrama de Entidad Relacion y Máximo Cabral sigue haciendo el modelo del diseño de la pagina en Figma, ya hizo varios diseños como 
-el Home, la pestaña de Eventos y el Login, Santiago Vigo sigue avanzando con las haitaciones en 2D
+
+Fecha: 29/09/2025 (Reportando avances del 24/09/2025)
+
+Propósito de la Reunión: Reporte de Avance en la finalización de los documentos de planificación y la continuidad del diseño físico.
+
+Consolidación de Entregables (Avance Reportado)
+Se ha trabajado en consolidar los documentos de planificación para salir del riesgo de regresión reportado.
+
+Ian Paladea (Área: Planificación y Procesos):
+ * Se finalizó la elaboración del Diagrama CPM (Método de la Ruta Crítica), estableciendo la secuencia de tareas críticas para el proyecto
+
+ * Se avanzó con el Diagrama GANTT, detallando el cronograma y la asignación de tiempo a las tareas.
+ * Nota: Pendiente la validación del trabajo sobre el Diagrama de Entidad-Relación (DER) para determinar si debe regresar a los diagramas de flujo (DFD).
+
+Máximo Cabral (Maxi) y Vigo Santiago (Thiago) (Áreas: Diseño y Frontend)
+
+ * Se trabajaron las modificaciones o ajustes requeridos en el diseño de Figma. Con estos cambios, la interfaz de usuario está nuevamente en estado final para la maquetación.
+ * Se reanudó la maquetación de los flujos de autenticación, retomando el avance en la codificación.
+
+Santiago Vigo (Área: Estructura Física):
+se ha completado la distribución final de equipos en los planos 2D en draw.io. Este es un entregable importante para el modelado 3D.
+
+Vigo Santiago (Thiago) (Áreas: Bases de Datos y Estructura Física)El Diagrama 2D mantiene su avance en la finalización de los planos restantes.
+
+Identificación de Riesgos y Bloqueos 
+El Riesgo de Regresión es bajo, ya que el diseño en Figma y el Diagrama CPM están finalizados.
+
+Riesgo de Dependencia (3D): La colaboración entre Santiago Vigo e Ian Paladea para el modelado 3D debe iniciar inmediatamente después de la validación de los planos 2D
+
+Planificación del Próximo Ciclo 
+Máximo Cabral y Thiago: Continuar la maquetación, e iniciar la maquetación de la página principal.
+
+Ian Paladea: Finalizar el Diagrama GANTT e iniciar la elaboración del DFD (Diagrama de Flujo de Datos).
+
+Vigo Santiago: Finalizar los planos restantes del Diagrama 2D.
+Santiago Vigo: Iniciar la colaboración para el modelado 3D.
+
+Decisión Pendiente (Sincronización) 
+Se requiere validación final por parte del equipo del Diagrama CPM y GANTT para oficializar el cronograma y las fechas de entrega.
