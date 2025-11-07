@@ -1,3 +1,31 @@
-El dia de la fecha 22/09/2025 Vigo Santiago finalizo de hacer el Diagrama de Entidad Relacion, y Ian Paladea empezo a hacer el Diamgrama de Caso de Uso, y Máximo Cabral sigue haciendo el modelo del diseño 
-de la pagina en Figma, ya realizo el home, lista eventos y con la informacion detallada, login y register y la pestaña de metodo de pago, Santiago Vigo sigue avanzando con las haitaciones en 2D
-y ya finalizo 5 haitaciones 
+
+Fecha: 22/09/2025
+Tema de la Reunión: Reporte de Avance en la Fase de Diseño y Planificación
+
+Consolidación de Entregables (Avance Reportado)
+
+Se ha completado la fase inicial de definición estructural y visual del proyecto, estableciendo la base para el desarrollo del MVP.
+Vigo Santiago  (Áreas: Bases de Datos y Estructura Física)
+Se finalizó la documentación del Diagrama de Entidad-Relación (DER). Este artefacto es la base para la implementación de la Base de Datos, definiendo el esquema y las relaciones clave entre entidades. Adicionalmente, se continuó con la documentación del diseño físico del proyecto, finalizando cinco (5) habitaciones del Diagrama 2D. En colaboración con Máximo Cabral, se trabajó en el diseño estructural de la interfaz, asegurando la coherencia entre la representación visual y las necesidades del modelo de datos (DER).
+
+Ian Paladea (Área: Requisitos Funcionales)
+Se inició la elaboración del Diagrama de Caso de Uso. Este proceso está mapeando las interacciones fundamentales del usuario con el sistema, sirviendo como guía para el desarrollo de la lógica de negocio.
+
+Máximo Cabral y Tiago (Área: Diseño de Interfaz de Usuario - Figma)
+Se ha finalizado la creación de los wireframes de la interfaz en Figma, basándose en el diseño estructural que realizó junto a Thiago. Esto incluye el Home, Lista y Detalle de Eventos, el flujo de autenticación (Login/Register), y la vista de Método de Pago. La finalización de Figma nos permite transicionar a la fase de codificación de la interfaz.
+
+Identificación de Riesgos y Bloqueos 🛑
+
+El riesgo principal identificado es la Sincronización de Artefactos: El Caso de Uso de Ian debe ser validado contra la estructura del DER de IAN. Se requiere una revisión cruzada formal para garantizar que todas las funcionalidades planificadas sean soportables por el esquema de Base de Datos. No se reporta un Bloqueo Crítico, el avance es satisfactorio.
+
+Planificación del Próximo Ciclo 🛠️
+
+  Ian Paladea: Finalizar el Diagrama de Caso de Uso y ejecutar la revisión de coherencia con el DER.
+
+  Máximo Cabral (Maxi): Comenzar la implementación del diseño, priorizando la conversión a HTML/CSS de los flujos de autenticación.
+
+ Vigo Santiago : Proporcionar la documentación final del DER y continuar con la culminación de los planos del Diagrama 2D.
+
+Decisión Pendiente (Sincronización) 
+ 
+Prioridad de Maquetación : ¿Se debe priorizar la implementación de register.html y login.html para la prueba temprana del flujo de autenticación, o la index.html para la validación visual de la presentación de datos?
