@@ -1,0 +1,30 @@
+
+Fecha: 27/09/2025 (Reportando avances del 19/09/2025)
+
+Propósito de la Reunión: Reporte de Avance en la transición a la fase de Codificación y Finalización de la Planificación.
+Consolidación de Entregables (Avance Reportado)
+
+Se ha marcado el inicio formal de la codificación y se avanza en la documentación de planificación esencial.
+
+Máximo Cabral (Maxi) y Vigo Santiago (Thiago) (Áreas: Frontend y Diseño): Se inició la maquetación en HTML/CSS de las vistas de autenticación (login.html y register.html). Esto representa el primer commit de código funcional al proyecto, iniciando la transición formal del diseño a la implementación. La finalización de las wireframes de Figma permite enfocar el 100% del esfuerzo en la codificación.
+
+Ian Paladea (Área: Planificación y Procesos): Se ha avanzado significativamente en la elaboración del Diagrama GANTT, estableciendo el cronograma detallado del proyecto con dependencias y plazos. El Diagrama CPM está finalizado.
+
+Vigo Santiago (Thiago) (Áreas: Bases de Datos y Estructura Física): Se ha subido el Diagrama de Entidad-Relación (DER) al repositorio de GitHub. Este commit oficializa la estructura de la Base de Datos para el Backend. Se mantiene el avance en el Diagrama 2D.
+
+Santiago Vigo (Área: Diseño Físico): Se culminó la distribución de los equipos dentro de los planos 2D en draw.io. Este entregable está listo para ser consolidado y revisado.
+
+Identificación de Riesgos y Bloqueos
+El Riesgo de Sincronización de la maquetación persiste: Es necesario que los primeros templates HTML/CSS maquetados por Maxi y Thiago utilicen la nomenclatura de clases y IDs final para evitar refactorización futura.
+
+Planificación del Próximo Ciclo
+Máximo Cabral y Thiago: Continuar la maquetación de los flujos de autenticación e iniciar la maquetación de la página principal (index.html).
+
+Ian Paladea: Finalizar el Diagrama GANTT e iniciar la elaboración del DFD (Diagrama de Flujo de Datos), cerrando la fase de planificación.
+
+Vigo Santiago: Finalizar los planos restantes del Diagrama 2D.
+Santiago Vigo: Iniciar la colaboración con Ian Paladea para el modelado 3D.
+
+Decisión Pendiente (Sincronización) 
+
+Se requiere una revisión rápida y formal de los templates login.html y register.html antes de avanzar la maquetación del index.
