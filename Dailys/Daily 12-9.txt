@@ -1,3 +1,40 @@
-El día de hoy 12/09/2025 nuestro compañero Santiago Vigo creó el proyecto en GitHub, arrancamos a decidir la distribución de las tareas que hay que llevar a cabo en este proyecto,
-Máximo Caral se ofrecio a hacer el diseño de la página con la web figma ya que se le da bien manejarse con las herramientas de diseño, Santiago Vigo se encargará de la distribución de las
-habitaciones y del modelado 2D y 3D con Ian Paladea, además de eso Ian se va a encargará de los diagramas DFD, diagrama de Caso de uso, diagrama CPM y  diagrama GANTT.  
+Fecha: 23/09/2025
+
+Propósito de la Reunión: Establecimiento de la infraestructura de control de versiones y asignación de responsabilidades.
+
+Avances Individuales (Lo que hice desde la última reunión)
+Vigo Santiago(Focus: Bases de Datos, Estructura Física y Diseño)
+
+ Status Quo: Continuación de la documentación del DER y avance en el Diagrama 2D.
+
+ Infraestructura: Creación del repositorio oficial del proyecto en GitHub. Este repositorio centralizará el control de versiones y será la plataforma de entrega final.
+
+Ian Paladea (Focus: Requisitos Funcionales y Modelado de Procesos)
+
+ Status Quo: Continuación de la elaboración del Diagrama de Caso de Uso.
+
+ Asignación: Se responsabilizó de la documentación de procesos y planificación, incluyendo el Diagrama de Flujo de Datos (DFD), el Diagrama de Caso de Uso, el Diagrama CPM (Método de la Ruta Crítica) y el Diagrama GANTT.
+
+Máximo Cabral (Maxi) (Focus: Diseño de Interfaz de Usuario - Figma)
+ Status Quo: Continuación de la finalización de los wireframes clave en Figma.
+
+Asignación: Se ofreció, junto con Thiago, a liderar todo el Diseño de la Interfaz de la Página Web utilizando Figma, debido a su experiencia en herramientas de diseño.
+Santiago Vigo (Focus: Diseño Físico)
+
+ Asignación: Se encargará de la distribución de las habitaciones y del modelado físico del proyecto (Diagrama 2D y 3D) en colaboración con Ian Paladea.
+
+Bloqueos y Riesgos 🛑
+ Riesgo de Dependencia (Diseño Físico): La colaboración entre Santiago Vigo e Ian Paladea en el modelado 2D/3D requiere una coordinación estricta de las herramientas y formatos utilizados para evitar la duplicidad de esfuerzos.
+
+Bloqueo Crítico: Ninguno. La apertura del repositorio en GitHub elimina el riesgo de pérdida de código o documentación.
+
+Plan de Acción (Próximo Ciclo) 🛠️
+ Ian Paladea: Finalizar el Diagrama de Caso de Uso e iniciar la planificación del Diagrama GANTT.
+ 
+Máximo Cabral y Tiago: Cerrar el diseño en Figma y transicionar a la maquetación HTML/CSS.
+
+Vigo Santiago (: Finalizar la documentación del DER e iniciar la publicación de los primeros commits de la documentación estructural en GitHub.
+ Santiago Vigo: Iniciar el trabajo de distribución de habitaciones y el modelado 2D/3D con Ian Paladea.
+
+ Decisión Pendiente (Sincronización) 
+ Se requiere una decisión final sobre la prioridad de maquetación: Registro/Login o Lista de Eventos.
