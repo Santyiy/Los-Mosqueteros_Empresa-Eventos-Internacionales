@@ -1,2 +1,29 @@
-El dia de la fecha 03/10/2025 Ian Paladea sigue haciendo el Diamgrama de Caso de Uso, y Máximo Cabral sigue haciendo el modelo del diseño de la pagina en Figma, empezó a hacer la 
-parte del panel de adminstrador , Santiago Vigo sigue avanzando con las haitaciones en 2D y ya finalizo 8 haitaciones 
+
+Fecha: 01/10/2025 (Asumiendo secuencia. Reportando avances del 27/09/2025)
+
+Propósito de la Reunión: Reporte de avance en la finalización de la documentación de planificación crítica y el progreso en la implementación de la interfaz.
+
+Consolidación de Entregables (Avance Reportado)
+Estamos en un esfuerzo concentrado para cerrar la fase documental en los próximos tres ciclos, enfocando el trabajo en los artefactos pendientes y el modelado 3D.
+
+Ian Paladea (Área: Planificación y Procesos): Se encuentra en la fase final de la elaboración del Diagrama de Flujo de Datos (DFD). Este diagrama está mapeando los procesos internos del sistema y el flujo de información. El GANTT y el CPM están finalizados y listos para su validación final.
+
+Máximo Cabral y Vigo Santiago (Thiago) (Áreas: Diseño y Frontend): Se mantiene el enfoque en la maquetación. Se ha avanzado significativamente en la estructura de la página principal (index), y se está planificando la estructura inicial del Panel de Administración, utilizando el diseño finalizado de Figma.
+
+Santiago Vigo (Área: Diseño Físico): Se mantiene el progreso en la colaboración con Ian Paladea para el modelado 3D. El modelo avanza, basándose en los planos 2D y la distribución de equipos ya aprobada.
+
+Vigo Santiago (Thiago) (Área: Bases de Datos): La documentación del Diagrama 2D está finalizada y el DER está publicado en GitHub. El área se reorienta a la preparación del entorno de Backend para la integración.
+
+Identificación de Riesgos y Bloqueos
+El Riesgo de Dependencia es elevado: Es crucial que el DFD (Ian) sea finalizado antes de que Máximo y Thiago completen la maquetación de la interfaz de usuario, para asegurar que los flujos de datos en el diseño sean correctos.
+
+Planificación del Próximo Ciclo
+Ian Paladea: Finalizar el DFD y asistir en el modelado 3D.
+Máximo Cabral y Thiago: Finalizar la maquetación de la página principal (index) y del Panel de Administración.
+
+Vigo Santiago: Iniciar la configuración del entorno de desarrollo del Backend (repositorio de código, estructura inicial de archivos, dependencias).
+
+Santiago Vigo: Finalizar el modelado 3D.
+
+Decisión Pendiente (Sincronización) 
+Se requiere una revisión de validación final de los Diagramas DFD y GANTT para dar por concluida la fase de Planificación y mover el enfoque al 100% a la implementación (Frontend/Backend).
