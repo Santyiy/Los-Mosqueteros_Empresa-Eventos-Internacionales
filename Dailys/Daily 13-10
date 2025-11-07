@@ -1,2 +1,29 @@
-El dia de la fecha 10/10/2025 Ian Paladea empezo el Diagrama CPM, y Máximo Cabral sigue avanzandocon la parte
-del panel de adminstrador en Figma, Santiago Vigo sigue avanzando con las habitaciones en 2D y ya finalizo 11 habitaciones 
+Fecha: 24/09/2025 (Reportando avances del 10/10/2025)
+
+Propósito de la Reunión: Reporte de Avance en Diseño de Interfaz de Administración y Comienzo de Planificación de la Ruta Crítica.
+
+Consolidación de Entregables (Avance Reportado)
+Se registraron avances significativos en el diseño de la interfaz de administración y en la planificación del proyecto.
+
+Ian Paladea (Área: Requisitos Funcionales y Modelado de Procesos): Se inició la planificación formal del proyecto con la elaboración del Diagrama CPM (Método de la Ruta Crítica). Este proceso es esencial para identificar las dependencias y la secuencia de tareas más eficiente. Continúa la elaboración del Diagrama de Caso de Uso.
+
+Máximo Cabral (Maxi) (Área: Diseño de Interfaz de Usuario - Figma): Se ha continuado con el modelado de la interfaz en Figma, enfocándose ahora en el diseño del Panel de Administración. Esto permite definir las herramientas de gestión interna del sistema (creación de tickets, modificación de eventos). El diseño de las vistas de usuario (Home, Login, Register) está finalizado, listo para la maquetación.
+
+Vigo Santiago (Áreas: Bases de Datos y Estructura Física): Se reporta la finalización de un total de once (11) habitaciones del Diagrama 2D, manteniendo un buen progreso en la documentación física del proyecto. El Diagrama de Entidad-Relación (DER) está finalizado, pendiente de commit en GitHub.
+
+Santiago Vigo (Área: Diseño Físico): Mantiene su planificación para el inicio de la colaboración con Ian Paladea en el modelado 2D/3D.
+
+Identificación de Riesgos y Bloqueos 
+El Riesgo de Acoplamiento (Panel Admin) es imperativo: el diseño del Panel de Administración (Maxi) debe sincronizarse con el rol de ADMIN definido en el DER (Thiago) para asegurar la compatibilidad con el control de acceso futuro. No hay un Bloqueo Crítico reportado.
+
+Planificación del Próximo Ciclo 
+Ian Paladea: Finalizar el Diagrama CPM e iniciar la planificación del Diagrama GANTT.
+
+Máximo Cabral y Thiago: Finalizar el diseño del Panel de Administración en Figma y transicionar inmediatamente a la maquetación HTML/CSS de las páginas de autenticación.
+
+Vigo Santiago: Finalizar la documentación del DER y completar la publicación de los commits iniciales en el repositorio de GitHub.
+
+Santiago Vigo: Iniciar el trabajo de distribución de habitaciones y el modelado 2D/3D con Ian Paladea.
+
+Decisión Pendiente (Sincronización) 
+Se requiere una decisión final sobre la prioridad de maquetación para iniciar la codificación: Registro/Login o Lista de Eventos.
