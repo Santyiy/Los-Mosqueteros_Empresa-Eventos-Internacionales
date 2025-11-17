@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.mosqueteros_inc.model.Acceso;
 
 public interface AccesoRepository extends JpaRepository<Acceso, Integer> {
-    Acceso findBydispositivo(String dispositivo);
+    Acceso findByDispositivo(String dispositivo);
     
 }
 

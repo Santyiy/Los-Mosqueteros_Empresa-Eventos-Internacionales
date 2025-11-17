@@ -15,8 +15,13 @@ public class Ticket {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @Column(name = "codigoqr")
     private String codigoQR;
+
+    @Column(name = "estado")
     private String estado;
+
+    @Column(name = "lugar")
     private String lugar;
 
     @Column(name = "id_usuario")
@@ -25,10 +30,8 @@ public class Ticket {
     @Column(name = "id_evento")
     private Integer idEvento;
 
-    public Ticket() {
-    }
+    public Ticket() {}
 
-    // ---Constructor Completo---
     public Ticket(String codigoQR, String estado, String lugar, Integer idUsuario, Integer idEvento) {
         this.codigoQR = codigoQR;
         this.estado = estado;
@@ -37,55 +40,21 @@ public class Ticket {
         this.idEvento = idEvento;
     }
 
-    // ---Getters y Setters---
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
-    public int getId() {
-        return id;
-    }
+    public String getCodigoQR() { return codigoQR; }
+    public void setCodigoQR(String codigoQR) { this.codigoQR = codigoQR; }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public String getEstado() { return estado; }
+    public void setEstado(String estado) { this.estado = estado; }
 
-    public String getCodigoQR() {
-        return codigoQR;
-    }
+    public String getLugar() { return lugar; }
+    public void setLugar(String lugar) { this.lugar = lugar; }
 
-    public void setCodigoQR(String codigoQR) {
-        this.codigoQR = codigoQR;
-    }
+    public Integer getIdUsuario() { return idUsuario; }
+    public void setIdUsuario(Integer idUsuario) { this.idUsuario = idUsuario; }
 
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public String getLugar() {
-        return lugar;
-    }
-
-    public void setLugar(String lugar) {
-        this.lugar = lugar;
-    }
-
-    public Integer getIdUsuario() {
-        return idUsuario;
-    }
-
-    public void setIdUsuario(Integer idUsuario) {
-        this.idUsuario = idUsuario;
-    }
-
-    public Integer getIdEvento() {
-        return idEvento;
-    }
-
-    public void setIdEvento(Integer idEvento) {
-        this.idEvento = idEvento;
-    }
-    
-    
+    public Integer getIdEvento() { return idEvento; }
+    public void setIdEvento(Integer idEvento) { this.idEvento = idEvento; }
 }
