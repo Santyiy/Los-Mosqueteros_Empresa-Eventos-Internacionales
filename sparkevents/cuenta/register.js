@@ -1,9 +1,7 @@
-// /cuenta/register.js
 
 const API_BASE_URL = 'http://localhost:8080/api/v1';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Escucha el evento de envío del formulario de registro (ID: register-form)
     document.getElementById('register-form').addEventListener('submit', manejarRegistro);
 });
 
@@ -14,7 +12,6 @@ async function manejarRegistro(e) {
     const messageArea = document.getElementById('message-area');
     messageArea.innerHTML = '';
 
-    // 1. Recoger y validar datos
     const userData = {
         nombre: form.nombre.value, 
         apellido: form.apellido.value,
@@ -28,7 +25,6 @@ async function manejarRegistro(e) {
     }
 
     try {
-        // 2. Enviar petición POST a la API: POST /auth/register
         const response = await fetch(`${API_BASE_URL}/auth/register`, {
             method: 'POST',
             headers: {
@@ -39,7 +35,6 @@ async function manejarRegistro(e) {
 
         const data = await response.json();
 
-        // 3. Manejar respuesta
         if (response.ok) {
             mostrarMensaje("¡Registro exitoso! Redirigiendo a Iniciar Sesión...", 'green');
             form.reset();

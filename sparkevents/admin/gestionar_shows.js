@@ -1,4 +1,4 @@
-// /admin/gestionar_shows.js
+
 
 const API_BASE_URL = 'http://localhost:8080/api/v1';
 const token = localStorage.getItem('userToken');
@@ -6,16 +6,11 @@ const token = localStorage.getItem('userToken');
 document.addEventListener('DOMContentLoaded', () => {
     cargarShows();
     
-    // Asignar el listener al formulario
     document.getElementById('show-form').addEventListener('submit', manejarEnvioFormulario);
     
-    // Asignar el listener al botón de cancelar edición
     document.getElementById('cancel-button').addEventListener('click', limpiarFormulario);
 });
 
-// ==========================================================
-// LECTURA (GET)
-// ==========================================================
 
 async function cargarShows() {
     const tableBody = document.getElementById('shows-table-body');
@@ -70,20 +65,17 @@ function renderizarTabla(shows) {
     });
 }
 
-// ==========================================================
-// CREACIÓN Y EDICIÓN (POST / PUT)
-// ==========================================================
 
 async function manejarEnvioFormulario(e) {
     e.preventDefault();
     const showId = document.getElementById('show-id').value;
-    const isEditing = !!showId; // true si showId tiene valor (estamos editando)
+    const isEditing = !!showId; 
 
     const form = e.target;
     const showData = {
         nombre: form.nombre.value,
         lugar: form.lugar.value,
-        fecha_hora: form.fecha_hora.value, // Formato datetime-local es compatible con ISO-8601
+        fecha_hora: form.fecha_hora.value, 
         imagen_url: form.imagen_url.value,
         descripcion: form.descripcion.value
     };
@@ -102,14 +94,14 @@ async function manejarEnvioFormulario(e) {
         });
 
         if (!response.ok) {
-            // Intenta leer el mensaje de error del cuerpo de la respuesta
+            
             const errorData = await response.json();
             throw new Error(errorData.message || `Error ${response.status} al ${isEditing ? 'actualizar' : 'crear'} el show.`);
         }
 
         mostrarMensaje(`Show ${isEditing ? 'actualizado' : 'creado'} con éxito!`, 'success');
         limpiarFormulario();
-        cargarShows(); // Recargar la tabla
+        cargarShows(); 
         
     } catch (error) {
         console.error('Error en la operación:', error);
@@ -131,7 +123,6 @@ async function cargarShowParaEditar(id) {
         
         // Convertir la fecha al formato que requiere el input datetime-local (YYYY-MM-DDTHH:MM)
         const date = new Date(show.fecha_hora);
-        // Función auxiliar para formatear la fecha a YYYY-MM-DDTHH:MM
         const formattedDate = date.toISOString().substring(0, 16); 
         
         // Llenar el formulario
@@ -157,7 +148,6 @@ function limpiarFormulario() {
     document.getElementById('show-form').reset();
     document.getElementById('show-id').value = '';
     
-    // Restaurar la UI a modo Creación
     document.getElementById('form-title').innerText = 'Crear Nuevo Show';
     document.getElementById('submit-button').innerText = 'Guardar Show';
     document.getElementById('cancel-button').style.display = 'none';
@@ -186,7 +176,7 @@ async function eliminarShow(id) {
         }
 
         mostrarMensaje(`Show ID ${id} eliminado con éxito.`, 'success');
-        cargarShows(); // Recargar la tabla
+        cargarShows(); 
         
     } catch (error) {
         console.error('Error al eliminar show:', error);
@@ -213,7 +203,6 @@ function mostrarMensaje(texto, tipo) {
     `;
     messageArea.insertAdjacentHTML('beforeend', html);
     
-    // Opcional: Ocultar mensaje después de unos segundos
     setTimeout(() => {
         messageArea.innerHTML = '';
     }, 5000);

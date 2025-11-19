@@ -1,4 +1,3 @@
-// /admin/editar_show.js
 const API_BASE_URL = 'http://localhost:8080/api/v1';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,16 +22,13 @@ async function cargarDatosShow(id) {
 
         const data = await response.json();
         
-        // Llenar el formulario con los datos
         document.getElementById('nombre').value = data.nombre;
         document.getElementById('lugar').value = data.lugar;
         
-        // Formatear la fecha para el input datetime-local
         const fechaHora = new Date(data.fechaHora).toISOString().slice(0, 16);
         document.getElementById('fecha_hora').value = fechaHora;
 
         document.getElementById('descripcion').value = data.descripcion;
-        // Asumiendo que la imagenUrl es relativa a la raíz del proyecto
         document.getElementById('current-image').src = `../${data.imagenUrl}`; 
         
     } catch (error) {
@@ -42,12 +38,10 @@ async function cargarDatosShow(id) {
 }
 
 async function guardarCambios(id) {
-    // NOTA: La subida de archivos es más compleja y se maneja con FormData. 
-    // Aquí solo actualizamos los campos de texto por simplicidad.
     const updatedData = {
         nombre: document.getElementById('nombre').value,
         lugar: document.getElementById('lugar').value,
-        fechaHora: document.getElementById('fecha_hora').value + ':00', // API espera segundos
+        fechaHora: document.getElementById('fecha_hora').value + ':00', 
         descripcion: document.getElementById('descripcion').value,
     };
 
@@ -62,7 +56,7 @@ async function guardarCambios(id) {
 
         if (response.ok) {
             mostrarMensaje('Show actualizado con éxito!', 'green');
-            cargarDatosShow(id); // Recargar
+            cargarDatosShow(id); 
         } else {
             mostrarMensaje(`Error al actualizar: ${response.statusText}`, 'red');
         }

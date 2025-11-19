@@ -1,7 +1,6 @@
 package com.mosqueteros_inc.controller;
 
 
-
 import java.util.Optional;
 
 
@@ -23,11 +22,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mosqueteros_inc.dto.TicketDTO;
 import com.mosqueteros_inc.dto.TicketRequestDTO;
 import com.mosqueteros_inc.model.Acceso;
-
 import com.mosqueteros_inc.model.Evento;
 
 import com.mosqueteros_inc.model.Ticket;
-
 import com.mosqueteros_inc.repository.AccesoRepository;
 
 import com.mosqueteros_inc.repository.EventoRepository;

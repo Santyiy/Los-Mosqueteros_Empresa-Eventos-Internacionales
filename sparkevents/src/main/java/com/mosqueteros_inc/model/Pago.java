@@ -27,7 +27,6 @@ public class Pago {
     public Pago() {
     }
 
-    // ---Constructor Completo---
     public Pago(LocalDateTime fecha, double monto, String metodo, Integer idTicket) {
         this.fecha = fecha;
         this.monto = monto;
@@ -35,7 +34,6 @@ public class Pago {
         this.idTicket = idTicket;
     }
 
-    // ---Getters y Setters---
 
     public int getId() {
         return id;

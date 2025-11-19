@@ -1,4 +1,3 @@
-// /admin/gestionar_stock.js
 
 const API_BASE_URL = 'http://localhost:8080/api/v1';
 const token = localStorage.getItem('userToken');
@@ -62,7 +61,6 @@ async function cargarStockPorShow(showId) {
     tableBody.innerHTML = '<tr><td colspan="5">Cargando tipos de tickets...</td></tr>';
 
     try {
-        // Asumimos un endpoint para obtener el stock de un show específico
         const response = await fetch(`${API_BASE_URL}/tickets/stock?show_id=${showId}`, {
             headers: { 'Authorization': `Bearer ${token}` }
         });
@@ -104,7 +102,7 @@ function renderizarTablaStock(stockItems) {
 }
 
 // ==========================================================
-// CREACIÓN Y EDICIÓN (POST / PUT)
+// CREACIÓN Y EDICIÓN (POST)
 // ==========================================================
 
 async function manejarEnvioStock(e) {
@@ -141,7 +139,7 @@ async function manejarEnvioStock(e) {
         mostrarMensaje(`Stock ${isEditing ? 'actualizado' : 'creado'} con éxito!`, 'success');
         document.getElementById('stock-form-section').style.display = 'none';
         limpiarFormularioStock();
-        cargarStockPorShow(currentShowId); // Recargar la tabla
+        cargarStockPorShow(currentShowId); 
         
     } catch (error) {
         console.error('Error en la operación:', error);
@@ -159,13 +157,11 @@ async function cargarStockParaEditar(id) {
         
         const item = await response.json();
         
-        // Llenar el formulario
         document.getElementById('stock-id').value = item.id;
         document.getElementById('tipo_ticket_nombre').value = item.nombre_tipo;
         document.getElementById('precio').value = item.precio;
         document.getElementById('cantidad_disponible').value = item.cantidad_disponible;
 
-        // Cambiar la UI a modo Edición
         document.getElementById('stock-form-title').innerText = 'Editar Tipo de Ticket (ID: ' + item.id + ')';
         document.getElementById('submit-stock-button').innerText = 'Actualizar Stock';
         document.getElementById('stock-form-section').style.display = 'block';
@@ -204,7 +200,7 @@ async function eliminarStock(id) {
         }
 
         mostrarMensaje(`Tipo de Ticket ID ${id} eliminado con éxito.`, 'success');
-        cargarStockPorShow(currentShowId); // Recargar la tabla
+        cargarStockPorShow(currentShowId); 
         
     } catch (error) {
         console.error('Error al eliminar stock:', error);
@@ -212,9 +208,7 @@ async function eliminarStock(id) {
     }
 }
 
-// ==========================================================
-// UTILIDADES (Mensajes)
-// ==========================================================
+
 
 function mostrarMensaje(texto, tipo) {
     const messageArea = document.getElementById('message-area');
@@ -223,7 +217,6 @@ function mostrarMensaje(texto, tipo) {
     const alertClass = (tipo === 'success') ? 'alert-success' : (tipo === 'info' ? 'alert-info' : 'alert-error');
     const iconClass = (tipo === 'success') ? 'fa-check-circle' : (tipo === 'info' ? 'fa-info-circle' : 'fa-times-circle');
     
-    // (Asegúrate de que tus estilos CSS tengan las clases .alert-success, .alert-error, .alert-info)
     const html = `<div class="alert ${alertClass}"><i class="fas ${iconClass}"></i> ${texto}</div>`;
     messageArea.insertAdjacentHTML('beforeend', html);
     

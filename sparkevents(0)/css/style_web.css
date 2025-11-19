@@ -1,0 +1,135 @@
+/* /css/style_web.css */
+
+/* --- GENERALES Y TIPOGRAFÍA --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff; 
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.show-list-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 32px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+header {
+    background-color: #2c3e50; /* Color oscuro */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #fff;
+}
+
+header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #34495e;
+}
+
+/* --- GRILLA DE TARJETAS DE SHOWS --- */
+.show-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.show-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.show-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #eee;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-info h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 22px;
+    min-height: 50px;
+}
+
+.card-info p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.description-snippet {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 15px !important;
+}
+
+/* --- BOTÓN DE COMPRA --- */
+.btn-buy-ticket {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #e74c3c; /* Rojo/Naranja para llamar la atención */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-buy-ticket:hover {
+    background-color: #c0392b;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #ecf0f1;
+    color: #7f8c8d;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+}

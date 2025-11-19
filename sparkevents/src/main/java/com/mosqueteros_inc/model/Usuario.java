@@ -28,7 +28,6 @@ public class Usuario {
 
     }
 
-    // ---Constructor Completo---
     public Usuario(String nombre, String email, String contraseña, int telefono, String rol) {
         this.nombre = nombre;
         this.email = email;
@@ -38,7 +37,6 @@ public class Usuario {
     }
 
 
-    // ---Getters y Setters---
 
     public int getId() {
         return id;

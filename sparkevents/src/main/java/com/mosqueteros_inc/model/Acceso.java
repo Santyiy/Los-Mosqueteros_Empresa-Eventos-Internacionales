@@ -28,14 +28,12 @@ public class Acceso {
     public Acceso() {
     }
 
-    // ---Constructor Completo---
     public Acceso(String dispositivo, LocalDateTime fechaHora, Integer idTicket) {
         this.dispositivo = dispositivo;
         this.fechaHora = fechaHora;
         this.idTicket = idTicket;
     }
 
-    // ---Getters y Setters---
     
     public int getId() {
         return id;

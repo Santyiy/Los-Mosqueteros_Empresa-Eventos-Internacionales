@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración - SparkEvents</title>
+    <link rel="stylesheet" href="../css/style_admin.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        
+        <aside class="sidebar">
+            <div class="logo-admin">
+                <h2>SparkEvents <span style="color: #7d00ff;">ADMIN</span></h2>
+            </div>
+            <nav class="admin-nav">
+                <a href="#" class="nav-item active" data-module="dashboard">
+                    <i class="fa-solid fa-chart-line"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item" data-module="events">
+                    <i class="fa-solid fa-calendar-alt"></i> Gestión de Eventos
+                </a>
+                <a href="#" class="nav-item" data-module="tickets">
+                    <i class="fa-solid fa-ticket-alt"></i> ABM Tipos de Tickets
+                </a>
+                <a href="#" class="nav-item" data-module="users">
+                    <i class="fa-solid fa-users"></i> Gestión de Usuarios
+                </a>
+                <a href="#" class="nav-item" data-module="reports">
+                    <i class="fa-solid fa-chart-bar"></i> Reportes y Ventas
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="../index.html" style="color: #999;"><i class="fa-solid fa-arrow-left"></i> Volver al Portal</a>
+                <button id="admin-logout-btn" class="logout-btn"><i class="fa-solid fa-sign-out-alt"></i> Cerrar Sesión</button>
+            </div>
+        </aside>
+
+        <main class="content-main">
+            <header class="content-header">
+                <h1 id="module-title">Dashboard</h1>
+                <p id="user-info">Bienvenido, <span id="admin-username">Admin</span>.</p>
+            </header>
+
+            <div class="module-content" id="module-content">
+                <section id="dashboard" class="active-module">
+                    <h2>Resumen Rápido</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card"><h3>Eventos Activos</h3><p id="stat-events">0</p></div>
+                        <div class="stat-card"><h3>Ventas Hoy</h3><p id="stat-sales">$0</p></div>
+                        <div class="stat-card"><h3>Ingresos Pendientes</h3><p id="stat-access">0</p></div>
+                    </div>
+                </section>
+                
+                <section id="events" style="display: none;">
+                    <h2>Gestión de Eventos</h2>
+                    <button class="btn-primary" id="add-event-btn"><i class="fa-solid fa-plus"></i> Nuevo Evento</button>
+                    <div id="events-table-container">Cargando lista de eventos...</div>
+                </section>
+
+                </div>
+        </main>
+    </div>
+
+    <script src="../js/auth_check.js"></script> 
+    <script src="admin_logic.js"></script> 
+</body>
+</html>

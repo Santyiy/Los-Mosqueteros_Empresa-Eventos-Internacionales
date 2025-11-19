@@ -25,7 +25,6 @@ public class Evento {
     public Evento() {
     }
 
-    // ---Constructor Completo---
     public Evento(String nombre, LocalDate fecha, String lugar, int capacidad, String categoria) {
         this.nombre = nombre;
         this.fecha = fecha;
@@ -34,7 +33,6 @@ public class Evento {
         this.categoria = categoria;
     }
 
-    // ---Getters y Setters---
 
     public int getId() {
         return id;
