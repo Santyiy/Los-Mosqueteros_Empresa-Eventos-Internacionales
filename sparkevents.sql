@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2025 at 03:04 PM
+-- Generation Time: Nov 26, 2025 at 04:01 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -33,6 +33,13 @@ CREATE TABLE `accesos` (
   `fecha_hora` datetime(6) DEFAULT NULL,
   `dispositivo` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `accesos`
+--
+
+INSERT INTO `accesos` (`id`, `id_ticket`, `fecha_hora`, `dispositivo`) VALUES
+(1, 1, NULL, 'Lector_Puerta_1');
 
 -- --------------------------------------------------------
 
@@ -105,7 +112,7 @@ CREATE TABLE `tickets` (
 --
 
 INSERT INTO `tickets` (`id`, `id_evento`, `id_usuario`, `codigoqr`, `estado`, `lugar`) VALUES
-(1, 1, 1, 'QR-1763338424548', 'Activo', 'Tecnopolis'),
+(1, 1, 1, 'QR-1763338424548', 'Usado', 'Tecnopolis'),
 (2, 1, 1, 'QR-1763348467244', 'Activo', 'Tecnopolis'),
 (3, 2, 1, 'QR-1763348474673', 'Activo', 'Movistar Arena'),
 (4, 2, 2, 'QR-1763348478363', 'Activo', 'Movistar Arena'),
@@ -113,7 +120,8 @@ INSERT INTO `tickets` (`id`, `id_evento`, `id_usuario`, `codigoqr`, `estado`, `l
 (6, 1, 1, 'QR-1763350136925', 'Activo', NULL),
 (7, 1, 1, 'QR-1763350526922', 'Activo', NULL),
 (8, 1, 1, 'QR-1763350531238', 'Activo', NULL),
-(9, 1, 1, 'QR-1763350532060', 'Activo', NULL);
+(9, 1, 1, 'QR-1763350532060', 'Activo', NULL),
+(10, 1, 1, 'QR-1764113061303', 'Activo', NULL);
 
 -- --------------------------------------------------------
 
@@ -129,6 +137,13 @@ CREATE TABLE `usuarios` (
   `nombre` varchar(255) DEFAULT NULL,
   `rol` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `telefono`, `contraseña`, `email`, `nombre`, `rol`) VALUES
+(1, 1130295196, 'vigo', 'vigo32@gmail.com', 'santy', 'adm');
 
 --
 -- Indexes for dumped tables
@@ -172,7 +187,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `accesos`
 --
 ALTER TABLE `accesos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `eventos`
@@ -190,13 +205,13 @@ ALTER TABLE `pagos`
 -- AUTO_INCREMENT for table `tickets`
 --
 ALTER TABLE `tickets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
