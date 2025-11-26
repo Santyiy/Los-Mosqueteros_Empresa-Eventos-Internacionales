@@ -22,7 +22,7 @@ function checkAdminAccess() {
 
     if (userRole !== 'ADMIN') {
         alert('Acceso Denegado. Se requiere ser Administrador.');
-        window.location.href = '../index.html'; // Redirigir al portal público
+        window.location.href = '../index.html'; 
         return;
     }
     

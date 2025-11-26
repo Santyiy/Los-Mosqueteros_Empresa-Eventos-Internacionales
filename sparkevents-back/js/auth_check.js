@@ -1,16 +1,14 @@
-// /js/auth_check.js
-// Controla el estado de la sesión en la navegación
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const nav = document.getElementById('main-nav');
     const token = localStorage.getItem('userToken');
     const userName = localStorage.getItem('userName');
-    const isAdmin = localStorage.getItem('isAdmin') === 'true'; // El token/login debe guardar esto
+    const isAdmin = localStorage.getItem('isAdmin') === 'true';
 
     let navHtml = '';
 
     if (token) {
-        // Usuario logueado
         navHtml += `
             <a href="cuenta/perfil.html">Hola, **${userName}**</a>
         `;
@@ -39,12 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.removeItem('userToken');
             localStorage.removeItem('userName');
             localStorage.removeItem('isAdmin');
-            // Redirigir a la página principal
             window.location.href = 'index.html'; 
         });
     }
 
-    // Si estamos en una página de administración, forzar redirección si no es admin
     if (window.location.pathname.includes('admin/')) {
         if (!token || !isAdmin) {
             alert("Acceso denegado. No eres administrador o no has iniciado sesión.");
